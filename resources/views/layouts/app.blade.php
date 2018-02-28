@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -20,5 +21,6 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
+
 </body>
 </html>

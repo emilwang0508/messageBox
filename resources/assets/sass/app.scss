@@ -8,6 +8,14 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+@font-face {
+  font-family: 'iconfont';  /* project id 576648 */
+  src: url('//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.eot');
+  src: url('//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_576648_i2zjjn0dnnyojemi.svg#iconfont') format('svg');
+}
 html, body {
   background-color: #fff;
   color: #636b6f;
@@ -24,12 +32,45 @@ html, body {
   width: 30px;
   height:30px;
 }
+.message-pannel{
+  .message-header{
+  }
+}
 .message{
   .username{
     padding-left: 5px;
   }
-  margin: 20px 0;
+  margin: 15px 0;
   .message-content{
-    margin-left: 35px;
+
   }
+}
+.clearfix{
+  clear:both;
+}
+.like-btn{
+  margin-left:10px;
+}
+.oppose-btn{
+
+}
+.reply-pannel{
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+.reply-pannel:before{
+  content: '';
+  position: absolute;
+  border: 1px solid #eee;
+  background-color: #eeeeee;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  left: 30px;
+  top: -10px;
+}
+.replies{
+  font-size: 12px;
 }
