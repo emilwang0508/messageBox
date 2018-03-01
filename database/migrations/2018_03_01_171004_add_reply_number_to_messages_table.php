@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddRoleToUsersTable extends Migration
+class AddReplyNumberToMessagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddRoleToUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->tinyInteger('role')->default(0)->after('password')->comment('用户角色，普通用户为0，管理员为1，');
+        Schema::table('messages', function (Blueprint $table) {
+            $table->tinyInteger('reply_total')->default(0)->after('type')->comment('评论次数');
         });
     }
 
@@ -25,8 +25,8 @@ class AddRoleToUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('role');
+        Schema::table('messages', function (Blueprint $table) {
+            //
         });
     }
 }

@@ -21,6 +21,12 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
-
+    <script>
+        var main = document.querySelector('#app')
+        var random = Math.random();           //生成0——1的随机数
+        random = random*10;                        //0——10的随机数
+        random = Math.ceil(random);
+        main.style.backgroundImage='url(/img/bg'+random+'.jpg)'
+    </script>
 </body>
 </html>

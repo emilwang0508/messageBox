@@ -1,7 +1,4 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
 
@@ -49,10 +46,14 @@ html, body {
   clear:both;
 }
 .like-btn{
-  margin-left:10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reply-btn{
+  cursor: pointer;
 }
 .oppose-btn{
-
+  cursor: pointer;
 }
 .reply-pannel{
   padding: 20px;
@@ -73,4 +74,54 @@ html, body {
 }
 .replies{
   font-size: 12px;
+  .reply{
+    margin-bottom: 20px;
+    .created_at{
+      padding-right: 5px;
+    }
+  }
+}
+.user{
+  position: fixed;
+  top: 25px;
+  right: 10px;
+}
+.header{
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 3;
+}
+.main{
+
+}
+.app-name{
+  font-size: 20px;
+  font-weight: bold;
+  img{
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+.message-pannel{
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 5px;
+}
+.box-main{
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 3px;
+  padding: 5px;
+}
+#app{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding-top: 80px;
+  padding: 0;
+  overflow: hidden;
 }

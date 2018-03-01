@@ -11,22 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@welcome');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/message', 'HomeController@message')->name('message');
+Route::post('/reply', 'HomeController@reply')->name('reply');
+Route::post('/replies', 'HomeController@replies')->name('replies');
+Route::post('/like', 'HomeController@like')->name('like');
+Route::post('/oppose', 'HomeController@oppose')->name('oppose');
+Route::post('/msgSort', 'HomeController@msgSort');
